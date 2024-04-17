@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(130, 100, 250);
+}
+
+.caixa {
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00000022;
+}
+
+.caixa header {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+}
+
+.caixa .formulario {
+  margin-top: 30px;
+}
+
+.formulario .caixaentrada {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.caixaentrada input:focus {
+  box-shadow: 0 1px 0 rgba(130, 100, 250, 0.5);
+}
+
+.caixaentrada label {
+  color: #333;
+}
+
+.formulario :where(.caixaentrada input, .caixaentrada .caixaselecao) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: #777;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  margin-top: 8px;
+}
+
+.formulario .coluna {
+  display: flex;
+  column-gap: 15px;
+}
+
+.formulario .caixagenero {
+  margin-top: 20px;
+}
+
+.genero input{
+  accent-color: rgb(130, 100, 250);
+}
+
+.caixagenero h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.formulario :where(.opcaogenero, .genero) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.formulario .genero {
+  column-gap: 5px;
+}
+
+.formulario :where(.genero input, .genero label) {
+  cursor: pointer;
+}
+
+.endereco :where(input, .caixaselecao) {
+  margin-top: 15px;
+}
+
+.caixaselecao select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #777;
+  font-size: 1rem;
+}
+
+.formulario button{
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
+  background-color: rgb(130, 100, 250);
+  transition: all 0.2s ease;
+}
+
+.formulario button:hover{
+  background-color: rgb(100, 70, 220);
+}
+
+/* Responsividade */
+@media screen and (max-width: 500px) {
+  .formulario .coluna {
+    flex-wrap: wrap;
+  }
+}

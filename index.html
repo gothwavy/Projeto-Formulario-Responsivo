@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de registro com HTML e CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="caixa">
+      <header>Formulário de registro</header>
+      <form action="#" class="formulario">
+        <div class="caixaentrada">
+          <label>Nome completo</label>
+          <input type="text" placeholder="Insira seu nome completo" required />
+        </div>
+        <div class="caixaentrada">
+          <label>Endereço de email</label>
+          <input
+            type="email"
+            placeholder="Insira seu endereço de email"
+            required
+          />
+        </div>
+        <div class="coluna">
+          <div class="caixaentrada">
+            <label>Número de telefone</label>
+            <input type="number" placeholder="Insira seu telefone" required />
+          </div>
+          <div class="caixaentrada">
+            <label>Data de nascimento</label>
+            <input
+              type="date"
+              placeholder="Insira sua data de nascimento"
+              required
+            />
+          </div>
+        </div>
+        <div class="caixagenero">
+          <h3>Gênero</h3>
+          <div class="opcaogenero">
+            <div class="genero">
+              <input type="radio" name="genero" id="checkmasculino" checked />
+              <label for="checkmasculino">Masculino</label>
+            </div>
+            <div class="genero">
+              <input type="radio" name="genero" id="checkfeminino" />
+              <label for="checkfeminino">Feminino</label>
+            </div>
+            <div class="genero">
+              <input type="radio" name="genero" id="checkoutro" />
+              <label for="checkoutro">Prefiro não dizer</label>
+            </div>
+          </div>
+        </div>
+        <div class="caixaentrada endereco">
+          <label>Endereço</label>
+          <input type="text" placeholder="Insira o seu endereço" required />
+          <input type="text" placeholder="Insira o seu endereço (linha 2)" />
+          <div class="coluna">
+            <div class="caixaselecao">
+              <select>
+                <option class="primeiraselecao" hidden>País</option>
+                <option>Brasil</option>
+                <option>Estados Unidos</option>
+                <option>Japão</option>
+                <option>Índia</option>
+                <option>Africa do sul</option>
+              </select>
+            </div>
+            <input type="text" placeholder="Insira sua cidade" required />
+          </div>
+          <div class="coluna">
+            <input type="text" placeholder="Insira sua região" required />
+            <input type="number" placeholder="Insira seu CEP" required />
+          </div>
+        </div>
+        <button>Registrar</button>
+      </form>
+    </section>
+  </body>
+</html>
